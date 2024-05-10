@@ -1,0 +1,30 @@
+Understanding the problem:
+  The program prompts a user to enter an integer. A range of integers is created from 1 to the inputted integer. Each number that is fully divisible by both 3 and 5 is replaced 
+  with the string "FizzBuzz". Each number only fully divisible by 3 is replaced by the string "Fizz". Each number fully divisible by 5 is replaced by the string "Buzz". The 
+  array of numbers is returned to the user with an alert.
+  *A fully divisible number is one that has a remained of 0 when divided by the divisor.
+
+Plan:
+  The program does not have a UI. It uses a JS prompt on an HTML page to receive input from the user and returns output with a JS alert (popup).
+
+  The program inputs an integer from a JS prompt, entered by the user.
+
+  The desired output is an array of ordered integers from 1 to the user's inputted integer. Certain integers should be replaced by "Fizz", "Buzz" and "FizzBuzz" as described
+  above in the "Understanding the problem" section.
+  Example:
+    User input: 15
+    Output: "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz"
+  
+  Pseudo code:
+    Prompt user to enter an integer. Validate that it's an integer. Return a message if it's not an integer.
+
+    Create a function called fizzBuzz.
+      Cycle from 1 to the inputted integer by 1.
+        For every integer, add "FizzBuzz" to final result if fully divisible by 3 AND 5. If not, check if fully divisible by 3 and add "Fizz" to final string. If not, check if 
+        fully divisible by 5 and if so, add "Buzz" to final string. If none of these conditions work, concatenate current integer to the final string.
+      Return final string.
+    Show an alert to the user with the results of fizzBuzz function.
+
+Divide and conquer:
+  Begin by creating a prompt for the user's input.
+  
