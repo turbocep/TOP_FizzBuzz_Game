@@ -1,2 +1,7 @@
-const userInput = parseInt(prompt("Enter integer:"));
 
+function getUserInput() {
+  return parseInt(prompt("Enter integer:"));
+}
+
+
+alert(getUserInput());
