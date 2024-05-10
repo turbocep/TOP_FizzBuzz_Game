@@ -12,3 +12,7 @@ array is returned to the user with a JS alert.
 Run the project by opening its index.html file in a browser from 
 the "fizzBuzz" folder. You'll be prompted to enter an integer.
 
+Further improvements: 
+
+Add integer verification for user input. Alert user and prompt to
+re-enter if verification fails.
