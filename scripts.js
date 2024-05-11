@@ -2,26 +2,6 @@ function getUserInput() {
   return parseInt(prompt("Enter integer:"));
 }
 
-let userInput = getUserInput();
-
-let i = 1;
-let finalString = "";
-
-while(i <= userInput) {
-  if(i % 3 == 0 && i % 5 == 0) {
-    finalString += " FizzBuzz";
-  } else if (i % 3 == 0) {
-    finalString += " Fizz";
-  } else if (i % 5 == 0) {
-    finalString += " Buzz";
-  } else {
-    finalString += ` ${i}`;
-  }
-  i++;
-}
-
-alert(finalString);
-
 function getFizzBuzz(num) {
   if(num % 3 == 0 && num % 5 == 0) {
     return "FizzBuzz"
@@ -33,3 +13,12 @@ function getFizzBuzz(num) {
     return num;
   }
 }
+
+let userInput = getUserInput();
+let finalString = "1";
+
+for(let i = 2; i <= userInput; i++) {
+  finalString += ", " + getFizzBuzz(i);
+}
+
+alert(finalString);
