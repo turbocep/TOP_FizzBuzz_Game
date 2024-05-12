@@ -1,5 +1,5 @@
 function getUserInput() {
-  return parseInt(prompt("Enter integer:"));
+  return prompt("Enter integer:");
 }
 
 function getFizzBuzz(num) {
@@ -14,7 +14,17 @@ function getFizzBuzz(num) {
   }
 }
 
-let userInput = getUserInput();
+let userInput;
+
+do {
+  userInput = getUserInput();
+  if (userInput == null || userInput % 1 == 0) {
+    break;
+  } else {
+    alert("That's not a valid integer. Try again.");
+  }
+} while (true);
+
 let finalString = "1";
 
 for(let i = 2; i <= userInput; i++) {
