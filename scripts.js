@@ -18,7 +18,7 @@ let userInput;
 
 do {
   userInput = getUserInput();
-  if (userInput == null || userInput % 1 == 0) {
+  if (userInput == null || (userInput > 0 && userInput % 1 == 0)) {
     break;
   } else {
     alert("That's not a valid integer. Try again.");
