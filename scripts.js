@@ -16,6 +16,11 @@ function getFizzBuzz(num) {
 
 let userInput;
 
+/*I'd like to make the whole program ask for another input after
+output is provided, unless cancel is clicked. My first guess is
+that I'd have to put everything below this comment into a new
+do...while loop. Will figure out later. Not a priority. It does
+what it's supposed to and that's all that matters. */
 do {
   userInput = getUserInput();
   if (userInput == null || (userInput > 0 && userInput % 1 == 0)) {
