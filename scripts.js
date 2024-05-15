@@ -25,22 +25,24 @@ do {
   }
 } while (true);
 
-let finalString = "1";
+if (userInput) {
+  let finalString = "1";
 
-for(let i = 2; i <= userInput; i++) {
-  finalString += ", " + getFizzBuzz(i);
-}
+  for(let i = 2; i <= userInput; i++) {
+    finalString += ", " + getFizzBuzz(i);
+  }
 
-const choice = prompt("Enter 1 to print result to console, 2 to alert to screen and 3 for both:");
+  const choice = prompt("Enter 1 to print result to console, 2 to alert to screen and 3 for both:");
 
-switch (choice) {
-  case "1":
-    console.log(finalString);
-    break;
-  case "2":
-    alert(finalString);
-    break;
-  case "3":
-    console.log(finalString);
-    alert(finalString);
+  switch (choice) {
+    case "1":
+      console.log(finalString);
+      break;
+    case "2":
+      alert(finalString);
+      break;
+    case "3":
+      console.log(finalString);
+      alert(finalString);
+  }
 }
